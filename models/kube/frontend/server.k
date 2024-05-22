@@ -1,6 +1,6 @@
 import konfig.models.kube.frontend.server
-import external_secrets.v1beta1
+import models.kube.externalsecret
 
 schema Server(server.Server):
     imagePullSecrets?: [str]
-    externalSecrets?: [v1beta1.ExternalSecret]
+    externalSecrets?: [externalsecret.ExternalSecret]
